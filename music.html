@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Свето'музыка мыслей</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        background: #0b0b0b;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      header {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, #2b0040, #000000);
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        line-height: 1.2;
+      }
+
+      h2 {
+        font-weight: 400;
+        opacity: 0.9;
+        margin-bottom: 30px;
+        font-size: 1.8rem;
+        color: #7a00ff; /* Сделал заголовки секций чуть ярче */
+      }
+
+      button {
+        padding: 15px 40px;
+        margin: 10px;
+        border: none;
+        border-radius: 30px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        background: #7a00ff;
+        color: white;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background: #9a33ff;
+        box-shadow: 0 0 20px rgba(122, 0, 255, 0.6);
+      }
+
+      /* Секция описания */
+      .about-section {
+        padding: 80px 20px; /* Увеличил вертикальные отступы */
+        max-width: 600px;
+        margin: auto;
+      }
+
+      .about-section p {
+        margin: 15px 0; /* Отступы между строками описания */
+        font-size: 1.1rem;
+        opacity: 0.8;
+      }
+
+      /* Секция треклиста с отступом сверху */
+      .tracklist-section {
+        padding: 100px 20px; /* Большой отступ сверху и снизу */
+        max-width: 600px;
+        margin: auto;
+        background: rgba(
+          255,
+          255,
+          255,
+          0.03
+        ); /* Легкое выделение зоны треклиста */
+        border-radius: 20px;
+      }
+
+      .track {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #222;
+      }
+
+      footer {
+        padding: 40px;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Свето'музыка мыслей</h1>
+      <h2>Новый альбом</h2>
+      <button onclick="window.location.href = 'listen.html'">Слушать</button>
+    </header>
+
+    <section class="about-section">
+      <h2>Об альбоме</h2>
+      <p><b>Дата выхода:</b> 10.01.2026</p>
+      <p><b>Название:</b> Свето'музыка мыслей</p>
+      <p><b>Количество треков:</b> 9</p>
+      <p><b>Средняя длительность:</b> 4 мин</p>
+    </section>
+
+    <section class="tracklist-section">
+      <h2>Треклист</h2>
+      <div class="track"><span>Мутация</span><span>3:37</span></div>
+      <div class="track"><span>Не могу уснуть</span><span>2:53</span></div>
+      <div class="track"><span>Изнутри</span><span>1:59</span></div>
+      <div class="track">
+        <span>Мысык dance: Aziz Khan</span><span>3:50</span>
+      </div>
+      <div class="track"><span>Поймай меня</span><span>1:55</span></div>
+      <div class="track"><span>Художник</span><span>3:26</span></div>
+      <div class="track"><span>Тревога</span><span>1:35</span></div>
+      <div class="track"><span>Вплавь</span><span>3:34</span></div>
+      <div class="track"><span>Паззл</span><span>3:33</span></div>
+    </section>
+
+    <footer>© 2026 • Свето'музыка мыслей</footer>
+  </body>
+</html>
